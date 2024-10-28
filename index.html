@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio personnel">
+  <title>Mon Profil</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+  <!-- CSS Styling -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(45deg, #6a11cb, #2575fc);
+      color: white;
+      padding: 50px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+
+    header h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 3rem;
+      animation: slideIn 2s ease-out forwards;
+    }
+
+    header p {
+      font-family: // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 400 to 700
+
+.lora-<uniquifier> {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+};
+      font-size: 1.3rem;
+      margin-top: 10px;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 30px 0;
+    }
+
+    .content-section {
+      margin-bottom: 60px;
+    }
+
+    .content-section h2 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 20px;
+      color: #2575fc;
+    }
+
+    .content-section p {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    .photo-gallery, .video-section {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .photo-gallery img, .video-section video {
+      width: 30%;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .photo-gallery img:hover, .video-section video:hover {
+      transform: scale(1.05);
+    }
+    /* Footer Styling */
+    .contact-section {
+      background: #2575fc;
+      color: white;
+      padding: 40px 0;
+      text-align: center;
+      width: 100%;  /* Assure que le footer prend toute la largeur */
+    }
+    
+    .contact-section h2 {
+      font-family: 'Pacifico', cursive;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    
+    .contact-section p {
+      font-size: 1.2rem;
+    }
+    
+    /* Icon Styling */
+    .contact-section ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0 0;
+      display: flex;
+      justify-content: center; /* Centre les icônes horizontalement */
+      gap: 20px; /* Ajoute de l'espace entre les icônes */
+    }
+    
+    .contact-section ul li {
+      display: inline-block;
+    }
+    
+    .contact-section ul a {
+      color: white;
+      text-decoration: none;
+      transition: transform 0.3s ease-in-out;
+    }
+    
+    .contact-section ul a:hover {
+      transform: scale(1.1); /* Effet d'agrandissement au survol */
+    }
+    
+    /* Animation for content */
+    .fadeIn {
+      opacity: 0;
+      animation: fadeIn 2s ease-in forwards;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Back-to-top button */
+    #back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #6a11cb;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 1rem;
+      display: none;
+    }
+
+    #back-to-top:hover {
+      background-color: #2575fc;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header>
+    <h1>Bienvenue dans mon univers</h1>
+    <p>Explorateur du monde, développeur passionné et sportif</p>
+    <script src="https://kit.fontawesome.com/3500dd8ad2.js" crossorigin="anonymous"></script>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Section Présentation -->
+    <div class="content-section fadeIn">
+      <h2>Qui suis-je ?</h2>
+      <p>
+        Je suis Maxime Duval, un passionné de technologie et d’innovation et de sport, toujours à la recherche de nouveaux défis. J’adore découvrir de nouvelles cultures, voyager, et créer des solutions innovantes à travers le développement web. 
+      </p>
+    </div>
+
+    <!-- Section Galerie Photos -->
+    <div class="content-section fadeIn">
+      <h2>Mes aventures en images</h2>
+      <div class="photo-gallery">
+        <!-- Placeholder for your photos -->
+        <img src="images/profile_image.jpg" alt="Maxime Duval">
+        <img src="images/rugby_photo3.jpg" alt="Sport">
+        <img src="images/voyage_photo.jpg" alt="Voyages">
+      </div>
+    </div>
+
+
+    
+      <h2>Un passioné de sport</h2>
+       <p><i class="fa-solid fa-futbol fa-xl" style="color: #74C0FC;"></i>   Je m'intéresse énormément aux sports comme le rugby, le football, le basket, le tennis, la formule 1 oue encore les fléchettes.</p>
+   
+
+   
+      <h2>La découverte de nouvelles cultures</h2>
+       <p><i class="fa-solid fa-plane fa-xl" style="color: #74C0FC;"></i>   J'ai eu la chance de énormément voyager et decouvrir de nouvelles cultures et de nouveaux paysages comme en Grèce, Irlande, Etats-Unis, Espagne, Portugal et Italie</p>
+   
+     <h2> Fan de voitures </h2>
+      <p><i class="fa-solid fa-car fa-xl" style="color: #74C0FC;"></i>   Je suis un grand fan de sport automobile</p>
+   
+  
+
+<br>
+
+  <!-- Contact Section -->
+  <footer class="contact-section">
+    <h2>Contactez-moi</h2>
+     <p>Email: maxime.duval@ieseg.fr</p>
+     <p>Téléphone: +33 7 87 53 91 22</p>
+     <p>Adresse: 129 Rue Barthélémy Delespaul, 49000 Lille, France</p>
+     
+     <h2>Follow me</h2>
+     <ul>
+       <li>
+         <a href="https://www.linkedin.com/in/maxime-duval19/" target="_blank">
+           <i class="fa-brands fa-linkedin fa-2xl" style="color: #B197FC;"></i>
+         </a>
+       </li>
+       <li>
+         <a href="https://www.instagram.com/maxime_dvl7/" target="_blank">
+           <i class="fa-brands fa-instagram fa-2xl" style="color: #B197FC;"></i>
+         </a>
+       </li>
+     </ul>
+     
+
+
+    </ul>
+</footer>
+
+  
+
+  <!-- Back to Top Button -->
+  <div id="back-to-top">Retour en haut</div>
+
+  <!-- JavaScript for animations and functionality -->
+  <script>
+    // Smooth Scroll for Back-to-top button
+    const backToTopButton = document.getElementById('back-to-top');
+    window.onscroll = function () {
+      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+        backToTopButton.style.display = 'block';
+      } else {
+        backToTopButton.style.display = 'none';
+      }
+    };
+
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+
+</body>
+</html>
